@@ -1,0 +1,18 @@
+<div *ngFor="let a of Articles">
+  <ng-container *ngIf="identifiant==a.id">
+    <nav class="float-left">
+      <img [src]="a.photo" alt="photo du livre" width="400px" height="450px" class="shadow p-3 mb-5 bg-white rounded" />
+    </nav>
+    <nav id="nav2">
+      <h2>{{a.Nom}}</h2>
+      <h5>{{a.cit}}</h5>
+      <p class="text-justify">{{a.re}}</p>
+    </nav>
+    <nav id="nav3">
+      <pre><b>Prix: </b>{{a.prix}}DT            <b>Date de Parution: </b>{{a.dateF}} 
+      <div *ngIf="a.disp==true;else non"  ><p class="alert alert-success">disponible Enocre</p></div>
+      <ng-template #non ><p class="alert alert-danger">n'est pas dispo pour le monment</p></ng-template>
+    </pre>
+    </nav>
+  </ng-container>
+</div>

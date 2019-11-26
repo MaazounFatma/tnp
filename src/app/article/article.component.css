@@ -1,0 +1,48 @@
+img {
+  margin-top: 70px;
+  margin-left: 130px;
+}
+
+#nav2 {
+  margin-left: 600px;
+  margin-top: 30px;
+}
+
+p {
+  width: 450px;
+  text-align: center;
+
+}
+
+h5 {
+  margin-top: 50px;
+
+  color: #EA6C6C;
+
+}
+
+h2 {
+  color: #9A9A9A;
+}
+
+
+
+#nav3 {
+  background-color: rgb(245, 245, 245);
+  margin: 100px;
+  height: 130px;
+  border-radius: 10cm;
+}
+
+b {
+  color: rgb(56, 56, 56);
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+pre {
+
+  margin-left: 250px;
+  padding-top: 20px;
+  padding-left: 30px;
+}

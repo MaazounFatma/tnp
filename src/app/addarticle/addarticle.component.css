@@ -1,0 +1,56 @@
+#divbody {
+  background-image: url('../../assets/pfff.jpg');
+  background-repeat: no-repeat;
+  background-size: 95%;
+  margin: 30px;
+}
+
+
+input {
+  width: 500px;
+}
+
+#btn1 {
+  width: 70px;
+}
+
+input.ng-valid {
+  border-left: 2px solid green;
+}
+
+input.ng-invalid {
+  border-left: 2px solid red;
+}
+
+form,
+
+h4 {
+  margin-left: 350px;
+}
+
+h1 {
+  margin-left: 400px;
+}
+
+button {
+  margin: 20px;
+}
+
+#msg {
+  width: 400px;
+  margin-left: 350px
+}
+
+label {
+  font-weight: bold;
+  color: rgb(233, 55, 55);
+}
+
+h1 {
+  color: rgb(38, 143, 38)
+}
+
+h4,
+p {
+  color: rgb(14, 10, 1);
+}

@@ -1,0 +1,23 @@
+<div>
+  <form (ngSubmit)="onSubmit(f2)" #f2="ngForm">
+    <label>Supprimer un tableau</label>
+    <br />
+    <input type="number" name="id" [(ngModel)]="id1" class="form-control" />
+    <input type="submit" value="Supprimer">
+  </form>
+  {{message}}
+</div>
+<div>
+  <form (ngSubmit)="onSub(f3)" #f3="ngForm">
+    <label>Entrez L'id du livre</label>
+    <input type="number" name="id" [(ngModel)]="id2" class="form-control"><br />
+    <label>Entrer le nouveaux prix</label>
+    <input type="number" name="prix" [(ngModel)]="prix" class="form-control"><br />
+    <label>Entrer le nouveaux prix</label>
+    <input type="text" name="nom" [(ngModel)]="nom" class="form-control"><br />
+
+    <input type="submit" value="Modifier">
+    {{msg2}}
+
+  </form>
+</div>

@@ -1,0 +1,47 @@
+<div id="divbody" class="container-fluid">
+  <h1>Ajouter Un Livre</h1>
+  <h4>si Guillaume Musso a sorti un nouveau livre,
+    <br /> n'hésitez pas de l'ajouter dans notre bibliothéque </h4>
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div class="form-group">
+      <label for="nom">Nom du livre: </label>
+      <input type="text" name="nom" [(ngModel)]="nom" required pattern="[A-Z]+" class="form-control" #nom1="ngModel">
+      <div *ngIf="nom1.invalid && nom1.dirty" class="alert alert-danger">
+        le nom doit etre en majiscule
+      </div>
+      <div [hidden]="!nom1.errors?.required || nom1.pristine" class="alert alert-danger">
+        Le nom est un champ obligatoire
+      </div>
+      <label for="id">identifiant </label>
+      <input type="number" name="id" [(ngModel)]="id" class="form-control" required pattern="[0-9]+" #identif="ngModel">
+      <div *ngIf="identif.invalid && identif.dirty" class="alert alert-danger">
+        l'identifiant doit etre un nombre
+      </div>
+      <div [hidden]="!identif.errors?.required || identif.pristine" class="alert alert-danger">
+        L'identifiant est un champ obligatoire
+      </div>
+      <label for="prix">Prix du livre</label>
+      <input type="prix" name="prix" [(ngModel)]="prix" required class="form-control">
+      <label for="photo">chemain de la photo </label>
+      <input type="photo" name="photo" [(ngModel)]="photo" required class="form-control">
+      <label for="dateF">Date de parution</label>
+      <input type="text" name="date" [(ngModel)]="date" class="form-control">
+      <label for="re">resumé du livre </label>
+      <input type="text" name="re" [(ngModel)]="re" required class="form-control">
+      <label for="cit">citation du livre</label>
+      <input type="text" name="cit" [(ngModel)]="cit" class="form-control">
+      <br />
+      <label for="disp">disponibilté du livre</label>
+      <select [(ngModel)]="disp" name="disp">
+        <option vlaue="true">true</option>
+        <option value="false">false</option>
+      </select>
+      <br />
+      <button type="submit" class="btn btn-success" id="btn1">Valider</button>
+      <button type="reset" class="btn btn-danger" id="btn1">Reset</button>
+    </div>
+  </form>
+  <div [hidden]="!submitted" class="alert alert-primary" id="msg">
+    {{msg}}
+  </div>
+</div>

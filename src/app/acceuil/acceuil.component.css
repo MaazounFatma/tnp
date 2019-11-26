@@ -1,0 +1,51 @@
+img {
+  padding: 50px;
+}
+
+p {
+
+  padding-left: 150px;
+  padding-bottom: 100px;
+}
+
+h3 {
+  padding: 40px;
+  padding-left: 250px;
+  margin-top: 20px;
+  color: rgb(235, 80, 80);
+}
+
+nav {
+  background-color: rgb(252, 252, 252);
+}
+
+h4 {
+  color: rgb(233, 149, 53);
+  padding-top: 100px;
+  font-weight: bold;
+
+}
+
+#p1 {
+  padding-bottom: 50px;
+
+}
+
+#carte {
+  margin-left: 40px;
+  padding-bottom: 30px;
+  ;
+}
+
+h2 {
+  margin: 20px;
+
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}

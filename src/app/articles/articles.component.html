@@ -1,0 +1,39 @@
+<h1>Mes Romans</h1>
+
+
+<div id="romans">
+  <div class="container">
+    <div class="row">
+      <ng-container *ngFor="let a of Articles">
+        <div class="col-sm-2">
+          <ul style="width:200px" class="breadcrumb">
+            <div class="card" style="width:200px">
+
+              <li class="list">
+
+                <div class="views-field views-field-hw-livre-couverture">
+                  <div class="field-content">
+
+
+                    <a [routerLink]="[a.id]">
+
+                      <img class="img-responsive" [src]="a.photo" width="250" height="366" /></a>
+                  </div>
+                </div>
+
+              </li>
+
+            </div>
+
+
+          </ul>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+
+</div>
+
+<link type="text/css" rel="stylesheet"
+  href="https://www.guillaumemusso.com/sites/default/files/css/css_eVQyg3N517SmRSR3GdZTQlhOOF1suk6IGk4cix5MU4M.css"
+  media="all" />
